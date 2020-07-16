@@ -1,0 +1,285 @@
+148  lsmod | grep -i nouveau
+  149  lspci | grep -i nvidia
+  150  cd /etc
+  151  ls
+  152  cd modprobe.d/
+  153  ls
+  154  sudo vi blacklist-nouveau.conf
+  155  sudo update-initramfs -u
+  156  df
+  157  lsblk
+  158  cd
+  159  ls
+  160  cd Downloads/
+  161  ls
+  162  ls -l
+  163  ls
+  164  cd
+  165  ls
+  166  sudo service lightdm stop
+  167  pkill Xorg
+  168  sudo pkill Xorg
+  169  cd Downloads/
+  170  ls
+  171  sudo bash NVIDIA-Linux-x86_64-440.82.run 
+  172  which gcc
+  173  gcc -v
+  174  sudo apt install gcc
+  175  which gcc
+  176  which cc
+  177  gcc -v
+  178  which g++
+  179  g++ -v
+  180  sudo apt install g++
+  181  which g++
+  182  g++ -v
+  183  ls
+  184  sudo bash NVIDIA-Linux-x86_64-440.82.run 
+  185  which make
+  186  make
+  187  sudo apt install make
+  188  sudo apt install make-guile
+  189  sudo bash NVIDIA-Linux-x86_64-440.82.run 
+  190  sudo reboot
+  191  cd /usr/
+  192  ls
+  193  cd local
+  194  ls
+  195  cd lib
+  196  ls
+  197  cd cu
+  198  cd cuda
+  199  ls
+  200  cd ..
+  201  ls
+  202  cd include/
+  203  ls
+  204  cd cuda
+  205  cd ..
+  206  ls
+  207  cd cuda
+  208  ls
+  209  cd include
+  210  ls
+  211  cd ..
+  212  ls
+  213  cd lib64
+  214  ls
+  215  cd ..
+  216  ls
+  217  cd ..
+  218  ls
+  219  cd
+  220  ls
+  221  printenv | grep PATH
+  222  cd
+  223  ls
+  224  vi .bashrc
+  225  which vim
+  226  vim
+  227  sudo apt install vim
+  228  ls
+  229  cd
+  230  vi .bashrc
+  231  source .bashrc
+  232  ls
+  233  printenv | grep PATH
+  234  printenv | grep LD
+  235  ls
+  236  cd Downloads/
+  237  ls
+  238  tar tvzf cudnn-10.1-linux-x64-v7.6.5.32.tgz 
+  239  tar xvzf cudnn-10.1-linux-x64-v7.6.5.32.tgz 
+  240  ls
+  241  cd cuda/
+  242  ls
+  243  cd include/
+  244  ls
+  245  cd ..
+  246  ls
+  247  cd lib64/
+  248  ls
+  249  ls -l
+  250  cd ..
+  251  ls
+  252  cd include/
+  253  ls
+  254  sudo cp cudnn.h /usr/local/cuda-10.1/targets/x86_64-linux/include
+  255  cd ..
+  256  ls
+  257  cd lib64
+  258  ls
+  259  ls -l
+  260  sudo cp libcudnn* /usr/local/cuda-10.1/targets/x86_64-linux/lib 
+  261  exit
+  262  ls
+  263  nvidia-smi
+  264  ls
+  265  cd Downloads/
+  266  ls
+  267  sudo bash cuda_10.1.105_418.39_linux.run 
+  268  sudo ldconfig
+  269  cd /usr/local
+  270  ls
+  271  cd cuda-10.1/
+  272  ls
+  273  ls -l
+  274  ls
+  275  cd lib64
+  276  ls
+  277  pwd
+  278  cd ..
+  279  ls
+  280  ls -l
+  281  cd targets/
+  282  ls
+  283  cd x86_64-linux/
+  284  ls
+  285  cd include/
+  286  ls
+  287  cd ..
+  288  ls
+  289  cd lib
+  290  ls
+  291  cd ..
+  292  ls
+  293  cd ..
+  294  ls
+  295  cd x86_64-linux/include/
+  296  ls
+  297  ls -l
+  298  ls
+  299  ls -l cudnn.h 
+  300  ls -l
+  301  sudo chmod a+r cudnn.h 
+  302  ls -l cudnn.h 
+  303  sudo chmod 644 cudnn.h 
+  304  ls -l cudnn.h 
+  305  cd ..
+  306  ls
+  307  cd lib
+  308  ls
+  309  ls -l libcudnn*
+  310  rm libcudnn.so
+  311  sudo rm libcudnn.so
+  312  ls -l libcudnn*
+  313  sudo rm libcudnn.so.7
+  314  ls -l libcudnn*
+  315  ln -s libcudnn.so.7.6.5 libcudnn.so.7
+  316  sudo ln -s libcudnn.so.7.6.5 libcudnn.so.7
+  317  ls -l libcudnn*
+  318  sudo ln -s libcudnn.so.7 libcudnn.so
+  319  ls -l libcudnn*
+  320  ls -l
+  321  ls -l libcudnn*
+  322  sudo ldconfig
+  323  ls
+  324  cd ..
+  325  ls
+  326  cd include/
+  327  ls
+  328  ls -l cudnn.h
+  329  exit
+  330  ls
+  331  cd
+  332  ls
+  333  sudo locale-gen en_US en_US.UTF-8
+  334  sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+  335  export LANG=en_US.UTF-8
+  336  sudo apt update && sudo apt install curl gnupg2 lsb-release
+  337  curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+  338  sudo sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
+  339  sudo apt update
+  340  sudo apt install ros-eloquent-desktop
+  341  sudo apt install python3-colcon-common-extensions
+  342  sudo apt install python3-rosdep
+  343  sudo apt install python3-argcomplete
+  344  sudo rosdep init
+  345  rosdep update
+  346  vi .bashrc
+  347  source .bashrc
+  348  ls
+  349  ros2 run demo_nodes_cpp talker
+  350  cd
+  351  ls
+  352  cd NVIDIA_CUDA-10.1_Samples/
+  353  ls
+  354  cd 2_Graphics/
+  355  ls
+  356  cd volumeRender/
+  357  ls
+  358  make
+  359  cd 
+  360  ls
+  361  cd /usr/lib
+  362  ls
+  363  cd x86_64-linux-gnu/
+  364  ls
+  365  ls -l libGL*
+  366  ln -s libGLdispatch.so.0 libGLdispatch.so
+  367  sudo ln -s libGLdispatch.so.0 libGLdispatch.so
+  368  sudo rm libGLdispatch.so
+  369  sudo ln -s libGLdispatch.so.0 libGLdispatch.so
+  370  sudo rm libGLESv2.so
+  371  sudo ln -s libGLESv2.so.2 libGLESv2.so
+  372  sudo rm libGL.so
+  373  sudo ln -s libGL.so.1 libGL.so
+  374  sudo rm libGLX.so
+  375  sudo ln -s libGLX.so.0 libGLX.so
+  376  cd
+  377  ls
+  378  cd NVIDIA_CUDA-10.1_Samples/
+  379  ls
+  380  cd 2_S
+  381  cd 2_Graphics/
+  382  ls
+  383  cd volumeRender/
+  384  ls
+  385  make
+  386  history 
+  387  sudo apt install freeglut3-dev
+  388  make
+  389  history
+ 390  cd
+  391  ls
+  392  vi install.txt
+  393  ls
+  394  cd NVIDIA_CUDA-10.1_Samples/
+  395  ls
+  396  cd 2_Graphics/
+  397  ls
+  398  cd volumeRender/
+  399  ls
+  400  ./volumeRender 
+  401  ls
+  402  cd ..
+  403  ls
+  404  cd simple
+  405  cd simpleGL
+  406  ls
+  407  make
+  408  ls
+  409  ./simpleGL 
+  410  cd
+  411  ls
+  412  tar tvzf dfv_slam_ws.20200527.tar.gz 
+  413  tar xvzf dfv_slam_ws.20200527.tar.gz 
+  414  l
+  415  cd dfv_slam_ws/
+  416  ls
+  417  cd bin
+  418  ls
+  419  ./rebuild.sh 
+  420  sudo apt install libjpeg-turbo8-dev
+  421  dpkg -l | grep turbo
+  422  sudo apt install libturbojpeg0-dev
+  423  dpkg -l | grep turbo
+  424  ls
+  425  ./rebuild.sh 
+  426  ls
+  427  ./run.sh 
+  428  history 
+kuwahara@ubuntu-18:~/dfv_slam_ws/bin$ 
+
+kuwahara@ubuntu-18:~/NVIDIA_CUDA-10.1_Samples/2_Graphics/volumeRender$ 
+
